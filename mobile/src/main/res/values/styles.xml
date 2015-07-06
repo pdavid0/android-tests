@@ -1,0 +1,60 @@
+<resources>
+
+    <style name="Theme.YPDine" parent="Base.Theme.YPDine">
+    </style>
+
+    <style name="Base.Theme.YPDine" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <!--<item name="android:paddingBottom">24dp</item>-->
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Widget.CardBigImage" parent="android:Widget">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Theme.YPDine.MainActivity" parent="Theme.YPDine">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionBarStyle">@style/CustomActionBar</item>
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/CustomActionBar</item>
+        <item name="android:buttonStyle">@style/Theme.YPDine.Widget.ConciergeButton</item>
+
+    </style>
+
+    <style name="CustomActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@android:color/transparent</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="Theme.YPDine.Widget.ConciergeButton" parent="android:Widget.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:minWidth">88dp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:translationZ">1dp</item>
+        <item name="android:background">@drawable/concierge_ripple_button</item>
+    </style>
+
+    <color name="primary">#673AB7</color>
+    <color name="primaryDark">#512DA8</color>
+    <color name="accent">#FF4081</color>
+    <color name="white">#fff</color>
+</resources>
